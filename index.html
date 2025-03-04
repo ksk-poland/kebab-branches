@@ -3,47 +3,416 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kebab Super King - Branches</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            color: #d35400;
-        }
-        .branch {
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-        .branch h2 {
-            margin-top: 0;
-        }
-    </style>
+    <title>Kebab Super King - Our Branches</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <h1>Kebab Super King - Our Branches</h1>
-    
-    <div class="branch">
-        <h2>City Center Branch</h2>
-        <p><strong>Address:</strong> 123 Main Street, City Center</p>
-        <p><strong>Phone:</strong> 01234 567890</p>
-        <p><strong>Hours:</strong> Mon-Sun: 11:00 AM - 11:00 PM</p>
-    </div>
-    
-    <div class="branch">
-        <h2>Westside Branch</h2>
-        <p><strong>Address:</strong> 456 West Avenue, Westside</p>
-        <p><strong>Phone:</strong> 01234 098765</p>
-        <p><strong>Hours:</strong> Mon-Sun: 11:00 AM - 11:00 PM</p>
-    </div>
-    
-    <!-- Add more branches as needed -->
-    
-    <p><a href="https://www.kebabsuperking.com">Back to Main Website</a></p>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">
+                    <img src="kebabsuperking-logo-landscape.png" alt="Kebab Super King Logo" class="landscape-logo">
+                </a>            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://www.kebabsuperking.com/">Home</a></li>
+                    <li><a href="https://www.kebabsuperking.com/about-us">About Us</a></li>
+                    <li><a href="/" class="active">Branches</a></li>
+                    <li><a href="https://www.kebabsuperking.com/menu">Menu</a></li>
+                    <li><a href="https://www.kebabsuperking.com/contact-us">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Our Branches</h2>
+            <p>Find a Kebab Super King location near you</p>
+        </div>
+    </section>
+
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search by city or address...">
+                <button id="searchButton"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="branches">
+        <div class="container">
+            <div class="city-list">
+                <ul>
+                    <li><a href="#bialystok">Białystok</a></li>
+                    <li><a href="#bielsk-podlaski">Bielsk Podlaski</a></li>
+                    <li><a href="#choroszcz">Choroszcz</a></li>
+                    <li><a href="#dobre-miasto">Dobre Miasto</a></li>
+                    <li><a href="#goldap">Gołdap</a></li>
+                    <li><a href="#ilawa">Iława</a></li>
+                    <li><a href="#lubawa">Lubawa</a></li>
+                    <li><a href="#olsztyn">Olsztyn</a></li>
+                    <li><a href="#orzysz">Orzysz</a></li>
+                    <li><a href="#ryn">Ryn</a></li>
+                    <li><a href="#suwalki">Suwałki</a></li>
+                    <li><a href="#warszawa">Warszawa</a></li>
+                    <li><a href="#wegorzewo">Węgorzewo</a></li>
+                </ul>
+            </div>
+
+            <div class="branches-listing">
+                <!-- Białystok -->
+                <div class="city-section" id="bialystok">
+                    <h2>Białystok <span class="branch-count">(9)</span></h2>
+                    <div class="branch-items">
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Białostoczek 22A, 15-841</p>
+                            <p><i class="fas fa-phone"></i> 731 998 801</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Generała Józefa Hallera 10, 15-814</p>
+                            <p><i class="fas fa-phone"></i> 731 998 832</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Antoniukowska 19B, 15-740</p>
+                            <p><i class="fas fa-phone"></i> 731 998 832</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Upalna 84A, 15-668</p>
+                            <p><i class="fas fa-phone"></i> 731 998 832</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Fabryczna 22A, 15-483</p>
+                            <p><i class="fas fa-phone"></i> 731 998 807</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Žeromskiego 18, 15-349</p>
+                            <p><i class="fas fa-phone"></i> 731 998 872</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Boleslawa Chrobrego ID/9, 15-057</p>
+                            <p><i class="fas fa-phone"></i> 731 998 832</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Swobodna 54F, 15-751</p>
+                            <p><i class="fas fa-phone"></i> 731 998 862</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Pozioma 2, 15-500</p>
+                            <p><i class="fas fa-phone"></i> 731 998 827</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bielsk Podlaski -->
+                <div class="city-section" id="bielsk-podlaski">
+                    <h2>Bielsk Podlaski <span class="branch-count">(1)</span></h2>
+                    <div class="branch-items">
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Adama Mickiewicza 34b, 17-100</p>
+                            <p><i class="fas fa-phone"></i> 731 998 914</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Choroszcz -->
+                <div class="city-section" id="choroszcz">
+                    <h2>Choroszcz <span class="branch-count">(1)</span></h2>
+                    <div class="branch-items">
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Henryk, Sienkiewicza 30a, 16-070</p>
+                            <p><i class="fas fa-phone"></i> 731 998 793</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dobre Miasto -->
+                <div class="city-section" id="dobre-miasto">
+                    <h2>Dobre Miasto <span class="branch-count">(1)</span></h2>
+                    <div class="branch-items">
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Zwycięstwa 12 H, 11-040</p>
+                            <p><i class="fas fa-phone"></i> 731 998 820</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gołdap -->
+                <div class="city-section" id="goldap">
+                    <h2>Gołdap <span class="branch-count">(1)</span></h2>
+                    <div class="branch-items">
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Królewiecka 11, 19-500</p>
+                            <p><i class="fas fa-phone"></i> 731998835</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Iława -->
+                <div class="city-section" id="ilawa">
+                    <h2>Iława <span class="branch-count">(3)</span></h2>
+                    <div class="branch-items">
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Zielona 72, 14-200</p>
+                            <p><i class="fas fa-phone"></i> 731 998 015</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Jana III Sobieskiego 14/5, 14-200</p>
+                            <p><i class="fas fa-phone"></i> 731 998 567</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Niepodległości 1E, 14-200</p>
+                            <p><i class="fas fa-phone"></i> 731 998 851</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lubawa -->
+                <div class="city-section" id="lubawa">
+                    <h2>Lubawa <span class="branch-count">(1)</span></h2>
+                    <div class="branch-items">
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Rynek 3, 14-260</p>
+                            <p><i class="fas fa-phone"></i> 731 998 805</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Olsztyn -->
+                <div class="city-section" id="olsztyn">
+                    <h2>Olsztyn <span class="branch-count">(17)</span></h2>
+                    <div class="branch-items">
+                        <div class="branch-item">
+                            <h3>ART Kebab Libański</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Pstrowskiego 23, 11-041</p>
+                            <p><i class="fas fa-phone"></i> 660 580 034</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Art Kebab Libański</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Dworcowa 4c, 11-041</p>
+                            <p><i class="fas fa-phone"></i> 728243309</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Bp. T. Wilczyńskiego 20, 11-041</p>
+                            <p><i class="fas fa-phone"></i> 690 377 864</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Partyzantów 40B, 10-402</p>
+                            <p><i class="fas fa-phone"></i> 731 998 887</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Tadeusza Kościuszki 45B, 11-041</p>
+                            <p><i class="fas fa-phone"></i> 781575686</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Jagiellońska 85a, 11-041</p>
+                            <p><i class="fas fa-phone"></i> 731 998 886</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Dworcowa 31, 11-041</p>
+                            <p><i class="fas fa-phone"></i> 731 998 887</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Bałtycka 18, 11-041</p>
+                            <p><i class="fas fa-phone"></i> 731 998 600</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Konstantego Ildefonsa Gałczyńskiego 1/lok. 22, 10-089</p>
+                            <p><i class="fas fa-phone"></i> 731 998 511</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Seweryna Pieniężnego 5, 11-041</p>
+                            <p><i class="fas fa-phone"></i> 731 998 936</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Seweryna Pieniężnego 13, 11-041</p>
+                            <p><i class="fas fa-phone"></i> 731 998 913</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Walentego Barczewskiego, 11-041</p>
+                            <p><i class="fas fa-phone"></i> 731 998 511</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>KEBAB GOLD</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Grunwaldzka 4, 11-041</p>
+                            <p><i class="fas fa-phone"></i> 731 998 910</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Barcza 58/U5, 10-685</p>
+                            <p><i class="fas fa-phone"></i> 731 998 854</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Jana Boenigka 7A, 10-686</p>
+                            <p><i class="fas fa-phone"></i> 690 377 864</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Aleja Wojska Polskiego 10a, 10-200</p>
+                            <p><i class="fas fa-phone"></i> 731 998 711</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Stanisława Żurawskiego 1A, 10-689</p>
+                            <p><i class="fas fa-phone"></i> 731 998 923</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Orzysz -->
+                <div class="city-section" id="orzysz">
+                    <h2>Orzysz <span class="branch-count">(1)</span></h2>
+                    <div class="branch-items">
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Ełcka 2L, 12-250</p>
+                            <p><i class="fas fa-phone"></i> 731 998 826</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ryn -->
+                <div class="city-section" id="ryn">
+                    <h2>Ryn <span class="branch-count">(1)</span></h2>
+                    <div class="branch-items">
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Plac Wolności 4, 11-520</p>
+                            <p><i class="fas fa-phone"></i> 731 998 847</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Suwałki -->
+                <div class="city-section" id="suwalki">
+                    <h2>Suwałki <span class="branch-count">(3)</span></h2>
+                    <div class="branch-items">
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Ludwika Waryńskiego 12, 16-402</p>
+                            <p><i class="fas fa-phone"></i> 731 998 821</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Alfreda Kowalskiego-Wierusza 4 a, 16-402</p>
+                            <p><i class="fas fa-phone"></i> 731 998 821</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> A. Wierusza-Kowalskiego 4 a, 16-402</p>
+                            <p><i class="fas fa-phone"></i> 731 998 821</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Warszawa -->
+                <div class="city-section" id="warszawa">
+                    <h2>Warszawa <span class="branch-count">(1)</span></h2>
+                    <div class="branch-items">
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Belwederska 2, 00-762</p>
+                            <p><i class="fas fa-phone"></i> 731 998 005</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Węgorzewo -->
+                <div class="city-section" id="wegorzewo">
+                    <h2>Węgorzewo <span class="branch-count">(2)</span></h2>
+                    <div class="branch-items">
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Zamkowa 19A, 11-600</p>
+                            <p><i class="fas fa-phone"></i> 731 998 001</p>
+                        </div>
+                        <div class="branch-item">
+                            <h3>Kebab Super King</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Generała Józefa Bema 1, 11-600</p>
+                            <p><i class="fas fa-phone"></i> 731 998 613</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="branch-map">
+        <div class="container">
+            <h2>Find Us on the Map</h2>
+            <div class="map-placeholder">
+                <p>Interactive map coming soon...</p>
+                <p>In the meantime, please use our search function or branch listings to find a location near you.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="/">
+                        <img src="kebabsuperking-logo-landscape.png" alt="Kebab Super King Logo" class="landscape-logo">
+                    </a>                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="https://www.kebabsuperking.com/">Home</a></li>
+                        <li><a href="https://www.kebabsuperking.com/about-us">About Us</a></li>
+                        <li><a href="/" class="active">Branches</a></li>
+                        <li><a href="https://www.kebabsuperking.com/menu">Menu</a></li>
+                        <li><a href="https://www.kebabsuperking.com/contact-us">Contact</a></li>
+                        </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> biuro@kebabsuperking.com</p>
+                    <p><i class="fas fa-phone"></i> Central Office: +48 695021633</p>
+                    <div class="social-icons">
+                        <a href="facebook.com/kebabsuperking"><i class="fab fa-facebook-f"></i></a>
+                        <a href="instagram.com/kebabsuperking"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kebab Super King. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
